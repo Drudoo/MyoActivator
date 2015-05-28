@@ -28,7 +28,7 @@
 
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateTrainButton) name:TLMHubDidConnectDeviceNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateTrainButton) name:TLMHubDidDisconnectDeviceNotification object:nil];
-        [self updateTrainButton];
+        //[self updateTrainButton];
     }
     return self;
 }
@@ -44,18 +44,18 @@
     [self presentViewController:navController animated:YES completion:nil];
 }
 
-- (void)train {
-    TLMMyo *device = [[[TLMHub sharedHub] myoDevices] firstObject];
-    [device presentTrainerFromViewController:self];
-}
+// - (void)train {
+//     TLMMyo *device = [[[TLMHub sharedHub] myoDevices] firstObject];
+//     [device presentTrainerFromViewController:self];
+// }
 
-- (void)updateTrainButton {
-    UIBarButtonItem *trainItem = nil;
-    if ([[[TLMHub sharedHub] myoDevices] count] > 0) {
-        trainItem = [[UIBarButtonItem alloc] initWithTitle:@"Train" style:UIBarButtonItemStylePlain target:self action:@selector(train)];
-    }
-    self.navigationItem.rightBarButtonItem = trainItem;
-}
+// - (void)updateTrainButton {
+//     UIBarButtonItem *trainItem = nil;
+//     if ([[[TLMHub sharedHub] myoDevices] count] > 0) {
+//         trainItem = [[UIBarButtonItem alloc] initWithTitle:@"Train" style:UIBarButtonItemStylePlain target:self action:@selector(train)];
+//     }
+//     self.navigationItem.rightBarButtonItem = trainItem;
+// }
 
 - (NSString *)eventNameForIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.row) {
@@ -68,7 +68,7 @@
         case 3:
             return MAEventNameWaveOut;
         case 4:
-            return MAEventNameTwistIn;
+            return MAEventNameDoubleTap;
         default:
             return nil;
     }

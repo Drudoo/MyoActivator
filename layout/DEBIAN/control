@@ -1,10 +1,10 @@
-Package: com.conradkramer.myoactivator
+Package: com.drudoo.myoactivator
 Name: MyoActivator
-Version: 0.0.1
+Version: 0.0.2
 Architecture: iphoneos-arm
 Description: Integrate Myo with Activator
-Maintainer: Conrad Kramer <support@kramerapps.com>
+Maintainer: Frederik Vanggaard <support@drudoo.com>
 Author: Conrad Kramer <support@kramerapps.com>
 Depends: mobilesubstrate, preferenceloader (>= 2.2), libactivator (>= 1.7.5~beta7), firmware (>= 6.0), gsc.bluetooth-le
 Section: Tweaks
-dev: conradkramer
+dev: drudoo

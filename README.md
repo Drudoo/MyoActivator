@@ -18,7 +18,7 @@ This project is based off of [PebbleActivator](https://github.com/rpetrich/Pebbl
 The first step to build the project is to clone the repository and initialize all of its submodules:
 
 ``` sh
-git clone git://github.com/conradev/MyoActivator.git
+git clone git://github.com/drudoo/MyoActivator.git
 cd MyoActivator
 git submodule update --init
 ```

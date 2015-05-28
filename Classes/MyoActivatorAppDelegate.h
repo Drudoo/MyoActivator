@@ -12,7 +12,7 @@ extern NSString * const MAEventNameCloseFist;
 extern NSString * const MAEventNameSpreadFingers;
 extern NSString * const MAEventNameWaveIn;
 extern NSString * const MAEventNameWaveOut;
-extern NSString * const MAEventNameTwistIn;
+extern NSString * const MAEventNameDoubleTap;
 
 @interface MyoActivatorAppDelegate : UIResponder <UIApplicationDelegate>
 

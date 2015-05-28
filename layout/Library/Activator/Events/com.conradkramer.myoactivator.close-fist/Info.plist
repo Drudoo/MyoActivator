@@ -2,4 +2,5 @@
 	title = "Close Fist";
 	group = "Myo";
 	description = "Close your fist wearing Myo";
+	"compatible-modes" = ("springboard", "lockscreen", "application");
 }
